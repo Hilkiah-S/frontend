@@ -15,7 +15,7 @@ export const RegisterCustomersendrequest = async (
     }
   
   try{
-    const response = await axios.post("http://198.199.80.48:3000/customer/create", senddata);
+    const response = await axios.post("https://kel.addisphoenix.com/customer/create", senddata);
   
     
     // console.log(response);

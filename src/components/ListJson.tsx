@@ -26,7 +26,7 @@ function DisplayList() {
         const token = localStorage.getItem('token')
 
         try {
-            const response = await axios.get("http://198.199.80.48:3000/customer/all",{ headers: { 'Authorization': `Bearer ${token}` } });
+            const response = await axios.get("https://kel.addisphoenix.com/customer/all",{ headers: { 'Authorization': `Bearer ${token}` } });
 
 
             console.log(response);
