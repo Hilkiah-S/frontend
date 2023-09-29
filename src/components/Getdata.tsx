@@ -5,7 +5,7 @@ export const Getdata  = async ()=>{
    
   
   try{
-    const response = await axios.get("http://localhost:3000/customer/get" );
+    const response = await axios.get("http://198.199.80.48:3000/customer/get" );
   
     
     console.log(response);

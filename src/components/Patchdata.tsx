@@ -3,7 +3,7 @@ import axios from 'axios';
 export const Patchdata  = async ()=>{
 
   try{
-    const response = await axios.patch("http://localhost:3000/customer/changeStatus" );
+    const response = await axios.patch("http://198.199.80.48:3000/customer/changeStatus" );
   
     
   

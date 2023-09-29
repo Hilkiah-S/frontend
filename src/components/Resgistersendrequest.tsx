@@ -15,7 +15,7 @@ export const RegisterSendrequest = async (
     }
   
     try{
-    const response = await axios.post("http://localhost:3000/auth/signup", senddata);
+    const response = await axios.post("http://198.199.80.48:3000/auth/signup", senddata);
     
     
     console.log(response);
