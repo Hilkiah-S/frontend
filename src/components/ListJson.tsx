@@ -1,7 +1,7 @@
 import { Table } from "antd";
 import React, { useEffect, useState } from 'react';
 import { AxiosError } from 'axios';
-import Getdata from "./getdata";
+
 import axios from "axios";
 
 // const Collectiondata=[{
