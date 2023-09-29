@@ -1,0 +1,30 @@
+.Demotable {
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
+  
+
+  .Demotable th {
+    background-color: #f3f3f3; 
+    color: #333; 
+    padding: 10px; 
+    text-align: left;
+    border-bottom: 2px solid #ddd; 
+  }
+  
+
+  .Demotable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  .Demotable td {
+    padding: 10px; 
+  }
+
+  .Demotable tr:hover {
+    background-color: #fafafa;
+  }
+  

@@ -1,0 +1,29 @@
+.icon-text-icon-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 244, 244);
+    width: 700px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+ 
+  }
+  
+  .prefix-icon,
+  .postfix-icon {
+    margin: 10px;
+    margin-right: 40px; 
+    size: 60px;
+  }
+  .prefix-icon,.postfix-icon {
+    color:Orange;
+  }
+  
+  
+  .text {
+    margin-right: 150px; 
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
