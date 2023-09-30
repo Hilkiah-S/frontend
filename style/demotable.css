@@ -1,30 +1,43 @@
 .Demotable {
-    width: 100%; 
-    border-collapse: collapse; 
-    font-size: 16px; 
-    margin-top: 20px; 
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-top: 20px;
+  overflow-x: auto; /* Scrollable if the content is too wide for very small screens */
+}
 
-  .Demotable th {
-    background-color: #f3f3f3; 
-    color: #333; 
-    padding: 10px; 
-    text-align: left;
-    border-bottom: 2px solid #ddd; 
-  }
-  
+.Demotable th {
+  background-color: #f3f3f3;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
 
-  .Demotable tr {
-    border-bottom: 1px solid #ddd;
-  }
-  
+.Demotable tr {
+  border-bottom: 1px solid #ddd;
+}
 
-  .Demotable td {
-    padding: 10px; 
-  }
+.Demotable td {
+  padding: 10px;
+}
 
-  .Demotable tr:hover {
-    background-color: #fafafa;
+.Demotable tr:hover {
+  background-color: #fafafa;
+}
+
+/* For Tablets */
+@media (max-width: 768px) {
+  .Demotable, .Demotable th, .Demotable td {
+      font-size: 14px;
+      padding: 8px;   
   }
-  
+}
+
+/* For Mobile phones */
+@media (max-width: 480px) {
+  .Demotable, .Demotable th, .Demotable td {
+      font-size: 12px; 
+      padding: 6px;   
+  }
+}

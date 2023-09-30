@@ -1,4 +1,4 @@
-import '../../style/register.css'
+import '../../style/login.css'
 import user_icon from '../assets/user.png'
 import visible_password from '../assets/visible.png'
 import invisible_password from '../assets/invisible.png'
@@ -41,14 +41,14 @@ return (
 
     <form className='Regform' onSubmit={handleSubmit(Sendrequest)}>
        
-    {/* <div className="input-group"> */}
+    {/* <div className="input-group-login"> */}
               
-            <div className="input-group">
+            <div className="input-group-login">
               <input type="email" placeholder="Email"  {...register("email")} onChange={(e)=>{setEmail(e.target.value)}}/>
               <MailOutlined className="input-icon" />
             </div>
             <br/>
-            <div className="input-group">
+            <div className="input-group-login">
               <input type="password" placeholder="Password" {...register("password")} onChange={(e)=>{setPassword(e.target.value)}}/>
               <LockOutlined  className="input-icon"  size={1}/>
             </div>

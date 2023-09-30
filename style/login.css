@@ -1,116 +1,128 @@
-.rightside {
-    background-color: white;
-    flex-grow: 2;
-    height: 100vh;
-
-}
-.container {
-    width:100%;
-    height:auto;
-    display:flex;
-    flex-direction: row;
-    height: 100vh;
-    }
 body {
-    font-family: 'Arial', sans-serif;
-    margin:0;
-    padding:0;
-} */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap; 
+}
+
+.leftside {
+  background-color: rgb(247, 181, 15);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+
+.rightside {
+  background-color: white;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Regform {
+  position: relative;
+  width: 100%; 
+  max-width: 800px; 
+  background: #fff;
+  padding: 40px;
+}
+
+.input-group-login {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.input-group-login:nth-child(1), .input-group-login:nth-child(2) {
+  display: inline-block;
+  width: 100%;
+}
+
+.input-group-login:nth-child(2) {
+  margin-left: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(247, 181, 15);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f5a623;
+}
+
+.centertext {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em; 
+}
 
 
-  
+@media (max-width: 768px) {
+  .leftside, .rightside {
+      width: 100%; 
+      height: auto;
+  }
 
-  
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .leftside {
-    background-color: rgb(247, 181, 15);
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    font-size: 2em;
-  }
-  
-  .rightside {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .Regform {
-    position: relative;
-    width: 60%;
-    background: #fff;
-    padding: 40px;
-  
-  }
-  
-  .input-group {
-    position: relative;
-    margin-bottom: 25px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .input-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-
-  .input-group:nth-child(1),
-  .input-group:nth-child(2) {
-    display: inline-block;
-    width: 100%;
+      width: 80%;
+      padding: 20px;
   }
 
-  .input-group:nth-child(2) {
-    margin-left: 20px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: rgb(247, 181, 15);
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #f5a623;
-  }
-  
-  .input-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    width: 20px; 
-    height: 20px; 
-  }
-  
   .centertext {
-    position: relative;
-   
-    margin-bottom: 20px; 
-    text-align: center; 
-    font-size: 40px;
+      font-size: 1.5em;
   }
+}
+
+
+@media (max-width: 480px) {
+  .leftside, .rightside {
+      width: 100%;
+  }
+
+  .Regform {
+      width: 90%; 
+      padding: 15px;
+  }
+
+  .input-group-login, input, button {
+      font-size: 0.9rem;
+  }
+
+  .centertext {
+      font-size: 1.2em;
+  }
+}

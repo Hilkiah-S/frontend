@@ -23,7 +23,7 @@ export const Sendrequest = async (
 
    
   console.log('response', response);
-  debugger;
+
   localStorage.setItem('token', response.data.data.token)
   
    

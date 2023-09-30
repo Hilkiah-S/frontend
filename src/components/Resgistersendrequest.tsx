@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { RegisterFormValue } from './types';
 import { AxiosError } from 'axios';
-
+import { useNavigate } from 'react-router-dom';
 export const RegisterSendrequest = async (
     data: RegisterFormValue
   ) => {
@@ -20,7 +20,7 @@ export const RegisterSendrequest = async (
     
     console.log(response);
      if (response.data.success===true){
-      alert("Success");
+      alert("Successfully Registered!");
       window.location.href='login';
      }
     }catch(e: any){
